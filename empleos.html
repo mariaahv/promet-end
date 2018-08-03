@@ -20,6 +20,7 @@
     <script src="scripts/scrolling-nav.js"></script>
     <script src="scripts/site.js"></script>
     <script src="scripts/empleos.js"></script>
+    <script type="text/javascript" src="http://promet.cl/wp-includes/js/jquery/jquery.js?ver=1.12.3"></script>
 
     <!--[if IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,153 +56,165 @@
 
           <div class="">
             <div class="background-gray">
-              <p class="col-md-6">Cont&aacute;ctenos: 421-0762</p>
-              <a  class=" col-md-offset-4 col-col-md-2  a-empleos" href="empleos.html">Trabaja con Nosotros</a>
+              <p class="col-md-6 padding">Cont&aacute;ctenos: 421-0762</p>
+              <a  class=" col-md-offset-3 col-col-md-3  a-empleos padding" href="empleos.html">Trabaja con Nosotros</a>
             </div>
           <div class="logo hidden-sm hidden-xs">
               <figure>
                   <a href="index.html">
-                      <img class="logo-responsive width-200" src="img/logo.png" alt="Promet">
+                      <!-- <img class="logo-responsive width-200" src="img/logo.png" alt="Promet"> -->
                   </a>
               </figure>
           </div>
           </div>
           <!--nav -->
           <nav class="navbar navbar-default" role="navigation">
-              <!--container -->
-              <div class="container padding-left-10">
+                         <div class="container" style="width: auto!important; margin-left: 5%;">
                   <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNavbar">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                  </div>
-                  <div id="divNavbar" class="navbar-collapse collapse">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNavbar">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                              </button>
+                          </div>
+                          <div id="divNavbar" class="navbar-collapse collapse">
 
-                      <!-- <p class="top-contacto hidden-sm hidden-xs">Cont&aacute;ctenos: 421-0762</p> -->
+                              <p class="top-contacto hidden-sm hidden-xs">Cont&aacute;ctenos: 421-0762</p>
 
-                      <div class="logo hidden-sm hidden-xs">
-                          <!-- <figure id="logo">
-                              <a href="index.html">
-                                  <img id="logo-img" src="img/logo.png" alt="Promet" class="width-200">
-                              </a>
-                          </figure> -->
-                          <figure class="padding-200 hidden-xs hidden-sm">
-                                  <img id="flag1" src="img/peru.png" alt="" class="flag" />
-                            </figure>
-                            <figure class="hidden-xs hidden-sm">
-                                <a href="http://promet.cl/" target="_blank">
-                                    <img id="flag2" src="img/chile.png" alt="" class="flag padding-200" />
-                                </a>
-                            </figure>
-                      </div>
-                      <ul class="nav navbar-nav">
-                          <li class="active"><a id="nav-home" href="index.html">HOME</a>
-                            <div id="div-home" class="line hidden-xs hidden-sm"></div>
-                          </li>
-                          <li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li>
-                              <a id="nav-compania" href="compania.html">COMPAÑIA</a>
-                              <div id="div-compania" class="line hidden-xs hidden-sm"></div>
-                          </li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li class="dropdown">
-                              <a id="nav-unidades" href="unidades.html" class="dropdown-toggle">UNIDADES DE NEGOCIO <b class="caret"></b></a>
-                              <div id="div-unidades" class="line hidden-xs hidden-sm"></div>
-                              <ul class="dropdown-menu hidden-sm hidden-xs">
-                                  <li>
-                                      <a href="ic.html" class="align-left">
-                                          <img src="img/LOGOIC_menu.jpg" alt="" />
+                              <div class="logo hidden-sm hidden-xs">
+                                  <figure id="logo">
+                                      <a href="index.html">
+                                          <img id="logo-img" src="img/logo.png" alt="Promet" class="width-200">
                                       </a>
+                                  </figure>
+                                  <figure class="padding-200 hidden-xs hidden-sm" style="margin-left: 110px;">
+                                      <a href="index.html">
+                                          <img id="flag1" src="img/peru.png" alt="" class="flag" />
+                                      </a>
+                                  </figure>
+                                  <figure class="hidden-xs hidden-sm">
+                                      <a href="http://promet.cl/" target="_blank">
+                                          <img id="flag2" src="img/chile.png" alt="" class="flag" />
+                                      </a>
+                                  </figure>
+                              </div>
+                              <ul class="nav navbar-nav" >
+                                  <li class="active"><a id="nav-home" href="index.html">HOME</a>
+                                    <div id="div-home" class="line hidden-xs hidden-sm"></div>
                                   </li>
                                   <li>
-                                      <a href="rental.html" class="align-left">
-                                          <img src="img/LOGORENTAL_menu.jpg" alt="" />
-                                      </a>
+                                  <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
                                   </li>
                                   <li>
-                                      <a href="servicios.html" class="align-left">
-                                          <img src="img/LOGOSERIVICO_menu.jpg" alt="" />
-                                      </a>
+                                      <a id="nav-compania" href="compania.html">COMPAÑIA</a>
+                                      <div id="div-compania" class="line hidden-xs hidden-sm"></div>
+                                  </li>
+                                  <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                                  </li>
+                                  <li class="dropdown">
+                                      <a id="nav-unidades" href="unidades.html" class="dropdown-toggle">UNIDADES DE NEGOCIO <b class="caret"></b></a>
+                                      <div id="div-unidades" class="line hidden-xs hidden-sm"></div>
+                                      <ul class="dropdown-menu hidden-sm hidden-xs">
+                                          <li>
+                                              <a href="ic.html" class="align-left">
+                                                  <img src="img/LOGOIC_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="rental.html" class="align-left">
+                                                  <img src="img/LOGORENTAL_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="servicios.html" class="align-left">
+                                                  <img src="img/LOGOSERIVICO_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <!-- <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                                  </li> -->
+                                  <li class="dropdown">
+                                      <a id="nav-productos" href="productos.html" class="dropdown-toggle">PRODUCTOS <b class="caret"></b></a>
+                                      <div id="div-productos" class="line hidden-xs hidden-sm"></div>
+                                      <ul class="dropdown-menu hidden-sm hidden-xs">
+                                          <li>
+                                              <a href="dlux.html" class="align-left">
+                                                  <img src="img/LOGODLUX_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="pack.html" class="align-left">
+                                                  <img src="img/LOGOPACK_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="panel.html" class="align-left">
+                                                  <img src="img/LOGOPANEL_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="metal.html" class="align-left">
+                                                  <img src="img/LOGOMETAL_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="flex.html" class="align-left">
+                                                  <img src="img/LOGOFLEX_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="bladder.html" class="align-left">
+                                                  <img src="img/LOGOBLADDER_menu.jpg" alt="" />
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                                  </li>
+                                  <li>
+                                      <a id="nav-proyectos" href="proyectos.html">PRINCIPALES PROYECTOS</a>
+                                      <div id="div-proyectos" class="line hidden-xs hidden-sm"></div>
+                                  </li>
+                                  <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                                  </li>
+                                  <li>
+                                      <a id="nav-noticias" href="noticias.html">NOTICIAS</a>
+                                      <div id="div-noticias" class="line hidden-xs hidden-sm"></div>
+                                  </li>
+                                  <li>
+                                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                                  </li>
+                                  <li>
+                                      <a id="nav-contacto" href="contacto.html">CONT&Aacute;CTENOS</a>
+                                      <div id="div-contacto" class="line hidden-xs hidden-sm"></div>
                                   </li>
                               </ul>
-                          </li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li class="dropdown">
-                              <a id="nav-productos" href="productos.html" class="dropdown-toggle">PRODUCTOS <b class="caret"></b></a>
-                              <div id="div-productos" class="line hidden-xs hidden-sm"></div>
-                              <ul class="dropdown-menu hidden-sm hidden-xs">
-                                  <li>
-                                      <a href="dlux.html" class="align-left">
-                                          <img src="img/LOGODLUX_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="pack.html" class="align-left">
-                                          <img src="img/LOGOPACK_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="panel.html" class="align-left">
-                                          <img src="img/LOGOPANEL_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="metal.html" class="align-left">
-                                          <img src="img/LOGOMETAL_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="flex.html" class="align-left">
-                                          <img src="img/LOGOFLEX_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="bladder.html" class="align-left">
-                                          <img src="img/LOGOBLADDER_menu.jpg" alt="" />
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li>
-                              <a id="nav-proyectos" href="proyectos.html">PRINCIPALES PROYECTOS</a>
-                              <div id="div-proyectos" class="line hidden-xs hidden-sm"></div>
-                          </li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li>
-                              <a id="nav-noticias" href="noticias.html">NOTICIAS</a>
-                              <div id="div-noticias" class="line hidden-xs hidden-sm"></div>
-                          </li>
-                          <!-- <li>
-                              <p class="hidden-xs hidden-sm font-size-20">|</p>
-                          </li> -->
-                          <li>
-                              <a id="nav-contacto" href="contacto.html">CONT&Aacute;CTENOS</a>
-                              <div id="div-contacto" class="line hidden-xs hidden-sm"></div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!--container -->
-          </nav>
+                          </div>
+                         </div>
+                  </nav>
+                  <br><br>
           <!--/nav -->
 
   </header>
     <!--/header-->
+
+    <script>
+    ( function ( $ ) { "use strict";
+            // alert('entro');
+    $(window).load(function() {
+      $("#cg-loader").fadeOut("slow");;
+    });
+    }( jQuery ) );
+    </script>
+
+
 
 <!--banner-->
 <div class="container-fluid hidden-xs" id="bannerproy">
@@ -355,4 +368,23 @@
 
     <!--/main-->
 </body>
+
+
+<div id="cg-loader">
+    	<div class="spinner">
+  			<div class="double-bounce1"></div>
+  			<div class="double-bounce2"></div>
+		</div>
+</div>
+
+
+  <!-- <script>
+  window.onload=function(){
+    var contenedor=document.getElementById('cg-loader');
+    contenedor.style.visibility='hidden';
+
+    }
+</script> -->
+
+
 </html>

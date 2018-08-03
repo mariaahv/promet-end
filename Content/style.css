@@ -53,7 +53,73 @@ h1 {
 }
 ----------------------------
 
+* -- Page Loader */
+.no-js #loader {
+display:none ;
+}
 
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+#cg-loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0px auto;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #feca00;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(10.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(10.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/*termino  de load*/
 
 .separated{
   margin-top: 50px;
@@ -394,21 +460,29 @@ height:20px;
         margin: 0;
         /* padding-left: 140px; */
         padding-top: 3px;
+
     }
 
     .a-empleos{
       color: white;
-      font-size: 15px;
+      font-size: 20px;
+      padding-left: : 30px;
+      font-weight: bold;
+    }
 
+
+
+    .padding{
+      padding-left: 50px;
     }
 
     .background-gray .a-empleos:hover{
       color:#AEAFB4;
     }
 
-.background-footer {
+    .background-footer {
     background: #242424;
-}
+    }
 
     .background-footer h1 {
         color: white;
@@ -1260,7 +1334,7 @@ a {
     top: 100px;
 }
 
-.goToTop {
+/* .goToTop {
     position: fixed;
     top: 0;
     width: 100%;
@@ -1269,19 +1343,19 @@ a {
     border-bottom: solid;
     border-width: 1px;
     border-color: #777;
-}
+} */
 
-    .goToTop ul li {
+    /* .goToTop ul li {
         top: -85px;
     }
 
         .goToTop ul li a {
             padding: 15px 10px !important;
-            /*top: -85px;*/
+
         }
 
     .goToTop ul ul {
-        /*top: -32px;*/
+
     }
 
     .goToTop li p {
@@ -1297,7 +1371,7 @@ a {
 .goToTop-white {
     background: white !important;
     color: #777 !important;
-}
+} */
 
 .goTop-orange {
     color: #e4e4e4 !important;
